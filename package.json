@@ -1,0 +1,32 @@
+{
+  "name": "chatroom",
+  "version": "0.0.1",
+  "description": "the web chatroom",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon --inspect app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molicreed/chatroom.git"
+  },
+  "keywords": [
+    "chatroom"
+  ],
+  "author": "yxlimo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molicreed/chatroom/issues"
+  },
+  "homepage": "https://github.com/molicreed/chatroom#readme",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1",
+    "mime": "^1.4.0",
+    "ws": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
