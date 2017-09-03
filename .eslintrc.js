@@ -6,7 +6,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion":8,
+        "ecmaVersion": 8,
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
             "jsx": true
@@ -26,6 +26,7 @@ module.exports = {
         "comma-dangle": ["error", {
             "functions": "ignore"
         }],
-        "space-before-function-paren": 0
+        "space-before-function-paren": 0,
+        "react/jsx-uses-vars": 2
     }
 };

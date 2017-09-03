@@ -8,7 +8,7 @@ router.use(async (ctx, next) =>{
 })
 
 router.get('/', async ctx=>{
-  ctx.response.body = 'Hello World'
+  ctx.response.redirect('/index.html')
 })
 
 module.exports = router

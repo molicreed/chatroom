@@ -1,10 +1,13 @@
 const Koa = require('koa')
 const app = new Koa()
+const path = require('path')
 const KoaRouter = require('./routes')
-const WebSocketServer = require('./websocket.js')
+const WebSocketServer = require('./lib/websocket.js')
 const bodyParser = require('koa-bodyparser')
+const staticResourse = require('koa-static')
 
 app.use(bodyParser())
+app.use(staticResourse(path.join(__dirname, './public')))
 app.use(KoaRouter.routes())
 
 let server = app.listen(3000, ()=>{

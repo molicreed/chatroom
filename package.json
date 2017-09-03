@@ -4,7 +4,8 @@
   "description": "the web chatroom",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon --inspect app.js"
+    "test": "nodemon --inspect app.js",
+    "build": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,19 @@
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
     "mime": "^1.4.0",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "ws": "^3.1.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.6.0",
+    "eslint-plugin-react": "^7.3.0",
     "nodemon": "^1.11.0",
     "webpack": "^3.5.5"
   }
