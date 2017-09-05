@@ -1,4 +1,6 @@
 import React from 'react'
+import './tabbar.scss'
+
 
 class InputMsg extends React.Component {
   constructor(props) {
@@ -9,9 +11,11 @@ class InputMsg extends React.Component {
   }
   render() {
     return (
-      <div id="message-input">
-        <input type="text" placeholder={this.state.secondsElapsed}/>
-        <button>submit</button>
+      <div id="tab-bar">
+        <div className="row"></div>
+        <div className="row"></div>
+        <div className="row"></div>
+        <div className="row"></div>
       </div>
     )
   }

@@ -1,0 +1,9 @@
+#main-window {
+  display: flex;
+  flex-direction: column;
+
+  #chat-window {
+    align-self: 79%;
+    border-bottom: 1px solid #ccc;
+  }
+}

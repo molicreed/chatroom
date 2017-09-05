@@ -8,6 +8,7 @@ router.use(async (ctx, next) =>{
 })
 
 router.get('/', async ctx=>{
+  console.log('anything-----')
   ctx.response.redirect('/index.html')
 })
 
